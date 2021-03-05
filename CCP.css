@@ -1,0 +1,95 @@
+.i1 {
+    width: 30%;
+    border-radius: 10px;
+    border-style: none;
+    height: 30%;
+    margin-top: 15%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: Black;
+}
+
+.a8 {
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.wallpapersafari.com/42/10/cedJ8Y.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.a {
+    width: 100%;
+    height: 100%;
+}
+
+.c9 {
+    width: 50%;
+    height: 50%;
+    margin: 3% auto 0 auto;
+}
+
+.b1 {
+    margin: 3% auto 0 25%;
+}
+.p1{
+    margin: 2% auto auto 25%;
+}
+.b2{
+    margin: 2% auto auto auto;
+}
+.p2{
+    margin: 2% auto auto 25%;
+}
+
+.Isp {
+    text-align: center;
+}
+
+.row {
+    width: 80%;
+    margin: 6% auto 0 auto;
+}
+
+.leftcolumn1 {
+    float: left;
+    width: 50%;
+}
+
+.rightcolumn1 {
+    float: right;
+    width: 50%;
+}
+
+.m1 {
+    margin-left: 35%;
+    margin-top: 20%;
+}
+
+#bInscription {
+    margin-left: 35%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#bConnexion {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#bConnexion:hover, #bInscription:hover {
+    background-color: seagreen;
+    color: white;
+}
