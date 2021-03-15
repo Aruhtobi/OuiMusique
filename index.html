@@ -10,6 +10,21 @@
     <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.js"></script>
     <link rel="stylesheet" href="CCP.css">
 </head>
+<header>
+    <div class="header main" style="display: none">
+        <div class="topnav">
+            <div class="search-container pl-5">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <a>
+                <button type="button" class=" btn-dark" id="bDeconnexion">Déconnexion</button>
+            </a>
+        </div>
+    </div>
+</header>
 <body>
 <div class="a8" style="display: none" id="start">
     <div class="m1">
@@ -22,45 +37,71 @@
     <div class="container i1">
         <h2 class="Isp">Inscription</h2>
         <div class="row">
-            <div class="leftcolumn1">
-                <p><u><strong>E-mail</strong></u></p>
-                <input type="email" placeholder="E-mail" id="newmail">
-                <p><u><strong>Mots de passe:</strong></u></p>
-                <input type="password" placeholder="Mots de passe" id="newpassword" name="text1">
+            <div class="leftcolumn1 form-group">
+                <label for="newmail"><u><strong>E-mail :</strong></u></label>
+                <input type="email" class="form-control" placeholder="E-mail" id="newmail">
+                <label for="newpassword"><u><strong>Mots de passe:</strong></u></label>
+                <input type="password" class="form-control" placeholder="Mots de passe" id="newpassword" name="text1">
             </div>
-            <div class="rightcolumn1">
-                <p><u><strong>Pseudo :</strong></u></p>
-                <input type="text" placeholder="Pseudo" id="newpseudo">
-                <p><u><strong>Verification MDP :</strong></u></p>
-                <input type="password" placeholder="Mots de passe" id="verifpassword">
+            <div class="rightcolumn1 form-group">
+                <label for="newpseudo"><u><strong>Pseudo :</strong></u></label>
+                <input type="text" class="form-control" placeholder="Pseudo" id="newpseudo">
+                <label for="verifpassword"><u><strong>Verification MDP :</strong></u></label>
+                <input type="password" class="form-control" placeholder="Mots de passe" id="verifpassword">
             </div>
             <div>
-                <input type="submit" class="b2" value="Inscription">
+                <button type="submit" class="b2 btn btn-light">Inscription</button>
                 <p class="p2">Déjà inscrit ? <a href="http://google.com" id="GotoCon">Connectez vous.</a></p>
             </div>
         </div>
     </div>
 </form>
 <!-- FORMULAIRE CONNEXION -->
-<form class="a a8" style="display: none" id="Connexion">
+<form class="a a8 form-group" style="display: none" id="Connexion">
     <div class="container i1">
         <h2 class="Isp">Connexion</h2>
         <div class="c9">
-            <p><u><strong>Pseudo/Mail :</strong></u></p>
-            <input type="text" placeholder="Pseudo" id="mailpseudo">
-            <p><u><strong>Mots de passe :</strong></u></p>
-            <input type="password" placeholder="Mots de passe" id="mdp">
+            <label for="mailpseudo"><u><strong>Pseudo/Mail :</strong></u></label>
+            <input type="text" class="form-control" placeholder="Pseudo/Mail" id="mailpseudo">
+            <label for="mdp"><u><strong>Mots de passe :</strong></u></label>
+            <input type="password" class="form-control" placeholder="Mots de passe" id="mdp">
         </div>
-        <input class="b1" type="submit" value="Connexion">
+        <button class="b1 btn btn-light" type="submit">Connexion</button>
         <p class="p1">Pas encore inscrit ?<a href="http://google.com" id="GotoIns">Inscription.</a></p>
     </div>
     </div>
 </form>
 <!-- Page princpale  -->
-<div id="walldiv" style="display: none">
-    <p>oui</p>
+<div class="sidenav" style="display: none">
+    <a href="#about">Profil</a>
+    <a href="#services">Playlist</a>
+    <a href="#clients">Favoris</a>
+    <a href="#contact" id="Contact">Contact</a>
+</div>
+
+<div class="main" id="walldiv" style="display: none">
+    <table class="table" id="MusicTable">
+        <tbody>
+
+        </tbody>
+    </table>
+
 </div>
 </body>
+<footer class="footer" id="footer" style="display: none">
+    <div>
+        <audio height="0" width="0" id="music"
+               src=""></audio>
+        <div class="progress">
+            <span class="start"></span>
+            <div class="progress-bar">
+                <div class="now"></div>
+            </div>
+            <span class="end"></span>
+        </div>
+
+    </div>
+</footer>
 <script src="CCP.js"></script>
 <script src="https://kit.fontawesome.com/ba31fbaee6.js" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
